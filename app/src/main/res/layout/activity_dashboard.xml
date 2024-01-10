@@ -91,7 +91,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:id="@+id/clothingImage"
-                        android:src="@drawable/clothing"
+                        android:src="@drawable/addVehicle"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
@@ -126,7 +126,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:id="@+id/elecImage"
-                        android:src="@drawable/electronics"
+                        android:src="@drawable/vehicles"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
@@ -174,7 +174,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:id="@+id/homeImage"
-                        android:src="@drawable/home"
+                        android:src="@drawable/addDriver"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
@@ -209,7 +209,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:id="@+id/beautyImage"
-                        android:src="@drawable/beauty"
+                        android:src="@drawable/drivers"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
@@ -258,7 +258,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:id="@+id/pharmImage"
-                        android:src="@drawable/pharmacy"
+                        android:src="@drawable/passengers"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
@@ -293,7 +293,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:id="@+id/grocImage"
-                        android:src="@drawable/groceries"
+                        android:src="@drawable/requests"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
@@ -333,7 +333,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Add Route"
+                        android:text="Reservations"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -341,7 +341,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:id="@+id/foodImage"
-                        android:src="@drawable/food"
+                        android:src="@drawable/reservations"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
@@ -366,7 +366,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="5dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Add Route"
+                        android:text="Finance"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -374,7 +374,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:id="@+id/foodImage2"
-                        android:src="@drawable/food"
+                        android:src="@drawable/finance"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
