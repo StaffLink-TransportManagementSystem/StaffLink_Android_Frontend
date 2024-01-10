@@ -10,17 +10,17 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
         android:fontFamily="sans-serif-condensed"
         android:text="Add New Vehicle"
         android:textColor="#0D3073"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.148"
-        android:focusableInTouchMode="true"/>
+        app:layout_constraintVertical_bias="0.044" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -58,8 +58,6 @@
         android:layout_marginEnd="36dp"
         android:layout_marginTop="1dp"
         android:hint="@string/email"
-        app:counterEnabled="true"
-        app:counterMaxLength="30"
         app:endIconMode="clear_text"
         app:helperText="Required*"
         app:helperTextTextColor="#FF0000"
@@ -71,13 +69,13 @@
         app:layout_constraintVertical_bias="0.069">
 
         <AutoCompleteTextView
+            android:id="@+id/type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Vehicle Type"
-            android:inputType="none"
-            android:id="@+id/type"/>
+            android:inputType="none" />
 
-<!--        <com.google.android.material.textfield.TextInputEditText-->
+        <!--        <com.google.android.material.textfield.TextInputEditText-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="wrap_content"-->
 <!--            android:hint="Vehicle Type"-->
@@ -111,7 +109,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="Vehicle Brand"
             tools:layout_editor_absoluteX="14dp"
             tools:layout_editor_absoluteY="530dp" />
 
@@ -135,23 +133,143 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
         app:layout_constraintVertical_bias="0.069">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Conform Password"
+            android:hint="Vehicle Brand"
             tools:layout_editor_absoluteX="14dp"
             tools:layout_editor_absoluteY="530dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="1dp"
+        android:hint="@string/email"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:endIconMode="clear_text"
+        app:helperText="Required*"
+        app:helperTextTextColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+        app:layout_constraintVertical_bias="0.069">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration Number"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="530dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textInputLayout6"-->
+<!--        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="36dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:hint="@string/email"-->
+<!--        app:counterEnabled="true"-->
+<!--        app:counterMaxLength="30"-->
+<!--        app:endIconMode="clear_text"-->
+<!--        app:helperText="Required*"-->
+<!--        app:helperTextTextColor="#FF0000"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"-->
+<!--        app:layout_constraintVertical_bias="0.069">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Driver Email"-->
+<!--            tools:layout_editor_absoluteX="14dp"-->
+<!--            tools:layout_editor_absoluteY="530dp" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="1dp"
+        android:hint="@string/email"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:endIconMode="clear_text"
+        app:helperText="Required*"
+        app:helperTextTextColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+        app:layout_constraintVertical_bias="0.069">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Seats"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="530dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textInputLayout8"-->
+<!--        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="36dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:hint="@string/email"-->
+<!--        app:counterEnabled="true"-->
+<!--        app:counterMaxLength="30"-->
+<!--        app:endIconMode="clear_text"-->
+<!--        app:helperText="Required*"-->
+<!--        app:helperTextTextColor="#FF0000"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"-->
+<!--        app:layout_constraintVertical_bias="0.069">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Starting Location"-->
+<!--            tools:layout_editor_absoluteX="14dp"-->
+<!--            tools:layout_editor_absoluteY="530dp" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
     <Button
         android:id="@+id/button"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="Next"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:background="@color/black"
@@ -160,34 +278,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
         app:layout_constraintVertical_bias="0.132" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Already have an Account?"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.416"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.103" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Already have an Account?"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.416"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button"-->
+<!--        app:layout_constraintVertical_bias="0.103" />-->
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textColor="#0D3073"
-        android:layout_marginStart="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.102" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView5"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Login"-->
+<!--        android:textColor="#0D3073"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/textView4"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/button"-->
+<!--        app:layout_constraintVertical_bias="0.102" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
