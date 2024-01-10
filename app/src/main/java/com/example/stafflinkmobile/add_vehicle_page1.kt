@@ -7,11 +7,11 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Toast
 
-class vehicles : AppCompatActivity() {
+class add_vehicle_page1 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_vehicles)
+        setContentView(R.layout.activity_add_vehicle_page1)
 
         val types = arrayOf("Car", "Van", "Bus");
         val autoComplete : AutoCompleteTextView = findViewById(R.id.type);
