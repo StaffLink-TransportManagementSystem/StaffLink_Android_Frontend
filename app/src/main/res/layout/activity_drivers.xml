@@ -11,28 +11,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/constraintLayout"
         android:layout_marginTop="20dp">
-
-        <!--        <TextView-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:id="@+id/amazonDesc"-->
-        <!--            android:text="Quality Staff Transport Service for all ..."-->
-        <!--            android:textSize="14sp"-->
-        <!--            android:layout_marginStart="18dp"-->
-        <!--            android:textColor="#0D3073"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toBottomOf="@id/amazonName"-->
-        <!--            app:layout_constraintEnd_toStartOf="@+id/amazonImage"/>-->
-
-        <!--        <ImageView-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="130dp"-->
-        <!--            android:id="@+id/amazonImage"-->
-        <!--            android:src="@drawable/db_image"-->
-        <!--            app:layout_constraintTop_toTopOf="parent"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            android:layout_marginEnd="16dp"-->
-        <!--            app:layout_constraintStart_toEndOf="@id/amazonName"/>-->
+        
 
         <TextView
             android:id="@+id/amazonName"
@@ -86,7 +65,7 @@
                         android:layout_marginEnd="179dp"
                         android:layout_marginBottom="82dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Vehicle No"
+                        android:text="Driver Name"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -104,58 +83,25 @@
                         android:layout_marginEnd="178dp"
                         android:layout_marginBottom="51dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Vehicle Type"
+                        android:text="Driver Email"
                         android:textColor="@color/black"
                         android:textSize="15sp"/>
 
+
                     <TextView
                         android:id="@+id/clothingName2"
-                        android:layout_width="64dp"
-                        android:layout_height="20dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="66dp"
-                        android:layout_marginEnd="274dp"
-                        android:layout_marginBottom="42dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="Start - "
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:id="@+id/clothingName3"
-                        android:layout_width="50dp"
-                        android:layout_height="22dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="161dp"
-                        android:layout_marginTop="67dp"
-                        android:layout_marginEnd="161dp"
-                        android:layout_marginBottom="41dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="End"
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:id="@+id/clothingName4"
                         android:layout_width="wrap_content"
-                        android:layout_height="20dp"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="87dp"
-                        android:layout_marginEnd="178dp"
-                        android:layout_marginBottom="13dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginEnd="155dp"
+                        android:layout_marginBottom="14dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Trips"
+                        android:text="Driver Contact No"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
 
@@ -251,7 +197,7 @@
                         android:layout_marginEnd="179dp"
                         android:layout_marginBottom="82dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Vehicle No"
+                        android:text="Driver Name"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -269,60 +215,28 @@
                         android:layout_marginEnd="178dp"
                         android:layout_marginBottom="51dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Vehicle Type"
+                        android:text="Driver Email"
                         android:textColor="@color/black"
                         android:textSize="15sp"/>
 
                     <TextView
                         android:id="@+id/start2"
-                        android:layout_width="64dp"
-                        android:layout_height="20dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="66dp"
-                        android:layout_marginEnd="274dp"
-                        android:layout_marginBottom="42dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="Start - "
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:id="@+id/end2"
-                        android:layout_width="50dp"
-                        android:layout_height="22dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="161dp"
-                        android:layout_marginTop="67dp"
-                        android:layout_marginEnd="161dp"
-                        android:layout_marginBottom="41dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="End"
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:id="@+id/trips2"
                         android:layout_width="wrap_content"
-                        android:layout_height="20dp"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="87dp"
-                        android:layout_marginEnd="178dp"
-                        android:layout_marginBottom="13dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginEnd="155dp"
+                        android:layout_marginBottom="14dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Trips"
+                        android:text="Driver Contact No"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
+
+
 
                     <ImageView
                         android:id="@+id/vehicleImage2"
@@ -382,7 +296,7 @@
                         android:layout_marginEnd="179dp"
                         android:layout_marginBottom="82dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Vehicle No"
+                        android:text="Driver Name"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -400,58 +314,24 @@
                         android:layout_marginEnd="178dp"
                         android:layout_marginBottom="51dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Vehicle Type"
+                        android:text="Driver Email"
                         android:textColor="@color/black"
                         android:textSize="15sp"/>
 
                     <TextView
                         android:id="@+id/start3"
-                        android:layout_width="64dp"
-                        android:layout_height="20dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="66dp"
-                        android:layout_marginEnd="274dp"
-                        android:layout_marginBottom="42dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="Start - "
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:id="@+id/end3"
-                        android:layout_width="50dp"
-                        android:layout_height="22dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="161dp"
-                        android:layout_marginTop="67dp"
-                        android:layout_marginEnd="161dp"
-                        android:layout_marginBottom="41dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="End"
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:id="@+id/trips3"
                         android:layout_width="wrap_content"
-                        android:layout_height="20dp"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="87dp"
-                        android:layout_marginEnd="178dp"
-                        android:layout_marginBottom="13dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginEnd="155dp"
+                        android:layout_marginBottom="14dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Trips"
+                        android:text="Driver Contact No"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
 
@@ -513,7 +393,7 @@
                         android:layout_marginEnd="179dp"
                         android:layout_marginBottom="82dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Vehicle No"
+                        android:text="Driver Name"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -531,58 +411,24 @@
                         android:layout_marginEnd="178dp"
                         android:layout_marginBottom="51dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Vehicle Type"
+                        android:text="Driver Email"
                         android:textColor="@color/black"
                         android:textSize="15sp"/>
 
                     <TextView
                         android:id="@+id/start4"
-                        android:layout_width="64dp"
-                        android:layout_height="20dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="66dp"
-                        android:layout_marginEnd="274dp"
-                        android:layout_marginBottom="42dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="Start - "
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:id="@+id/end4"
-                        android:layout_width="50dp"
-                        android:layout_height="22dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginStart="161dp"
-                        android:layout_marginTop="67dp"
-                        android:layout_marginEnd="161dp"
-                        android:layout_marginBottom="41dp"
-                        android:fontFamily="@font/poppins"
-                        android:text="End"
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:id="@+id/trips4"
                         android:layout_width="wrap_content"
-                        android:layout_height="20dp"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="87dp"
-                        android:layout_marginEnd="178dp"
-                        android:layout_marginBottom="13dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="75dp"
+                        android:layout_marginEnd="155dp"
+                        android:layout_marginBottom="14dp"
                         android:fontFamily="@font/poppins"
-                        android:text="Trips"
+                        android:text="Driver Contact No"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
 
