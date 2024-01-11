@@ -18,7 +18,8 @@ The main objectives of the project include:
 
 ## Technologies Used
 
-  - Java
+  - Kotlin
+  - XML
 
 ## Contributors
 
