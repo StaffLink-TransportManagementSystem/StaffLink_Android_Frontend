@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Requests">
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Requests"
+        android:textColor="#0D3073"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="0dp"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="417dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topic">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:id="@+id/Name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="82dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Passenger Name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/email1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="49dp"
+                    android:layout_marginEnd="178dp"
+                    android:layout_marginBottom="51dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Vehicle No"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/pickup1"
+                    android:layout_width="142dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="73dp"
+                    android:layout_marginEnd="197dp"
+                    android:layout_marginBottom="42dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Passenger Pickup"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/Drop1"
+                    android:layout_width="189dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="198dp"
+                    android:layout_marginTop="73dp"
+                    android:layout_marginEnd="-15dp"
+                    android:layout_marginBottom="44dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Passenger Dropoff"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/approveButton1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="192dp"
+                    android:layout_marginTop="102dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="#32CD32"
+                    android:backgroundTint="#32CD32"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="Approve"
+                    android:textSize="15dp"/>
+
+                <Button
+                    android:id="@+id/rejectButton1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="102dp"
+                    android:layout_marginEnd="189dp"
+                    android:background="#FF0000"
+                    android:backgroundTint="#FF0000"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="Reject"
+                    android:textSize="15dp"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="417dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/row1">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:id="@+id/Name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="82dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Passenger Name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/email2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="49dp"
+                    android:layout_marginEnd="178dp"
+                    android:layout_marginBottom="51dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Vehicle No"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/pickup2"
+                    android:layout_width="142dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="73dp"
+                    android:layout_marginEnd="197dp"
+                    android:layout_marginBottom="42dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Passenger Pickup"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/Drop2"
+                    android:layout_width="189dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="198dp"
+                    android:layout_marginTop="73dp"
+                    android:layout_marginEnd="-15dp"
+                    android:layout_marginBottom="44dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Passenger Dropoff"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/approveButton2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="192dp"
+                    android:layout_marginTop="102dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="#32CD32"
+                    android:backgroundTint="#32CD32"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="Approve"
+                    android:textSize="15dp"/>
+
+                <Button
+                    android:id="@+id/rejectButton2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="102dp"
+                    android:layout_marginEnd="189dp"
+                    android:background="#FF0000"
+                    android:backgroundTint="#FF0000"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="Reject"
+                    android:textSize="15dp"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="417dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/row2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <TextView
+                    android:id="@+id/Name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="82dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Passenger Name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/email3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="49dp"
+                    android:layout_marginEnd="178dp"
+                    android:layout_marginBottom="51dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Vehicle No"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/pickup3"
+                    android:layout_width="142dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="73dp"
+                    android:layout_marginEnd="197dp"
+                    android:layout_marginBottom="42dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Passenger Pickup"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/Drop3"
+                    android:layout_width="189dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="198dp"
+                    android:layout_marginTop="73dp"
+                    android:layout_marginEnd="-15dp"
+                    android:layout_marginBottom="44dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Passenger Dropoff"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/approveButton3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="192dp"
+                    android:layout_marginTop="102dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="#32CD32"
+                    android:backgroundTint="#32CD32"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="Approve"
+                    android:textSize="15dp"/>
+
+                <Button
+                    android:id="@+id/rejectButton3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="33dp"
+                    android:layout_marginTop="102dp"
+                    android:layout_marginEnd="189dp"
+                    android:background="#FF0000"
+                    android:backgroundTint="#FF0000"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="Reject"
+                    android:textSize="15dp"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
