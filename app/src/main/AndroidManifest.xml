@@ -13,6 +13,15 @@
         android:theme="@style/Theme.StaffLinkMobile"
         tools:targetApi="31">
         <activity
+            android:name=".passengers"
+            android:exported="false" />
+        <activity
+            android:name=".add_driver_page1"
+            android:exported="false" />
+        <activity
+            android:name=".Drivers"
+            android:exported="false" />
+        <activity
             android:name=".Vehicles"
             android:exported="false" />
         <activity
