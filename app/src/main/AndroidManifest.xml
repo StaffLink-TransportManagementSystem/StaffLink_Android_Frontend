@@ -13,6 +13,9 @@
         android:theme="@style/Theme.StaffLinkMobile"
         tools:targetApi="31">
         <activity
+            android:name=".Vehicles"
+            android:exported="false" />
+        <activity
             android:name=".add_vehicle_page2"
             android:exported="false" />
         <activity
