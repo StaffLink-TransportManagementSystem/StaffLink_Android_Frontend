@@ -259,6 +259,21 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonPay"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/subtopic"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Customer Payments"
+        android:textColor="#0D3073"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonStatement"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"/>
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -269,7 +284,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonStatement">
+        app:layout_constraintTop_toBottomOf="@id/subtopic">
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
