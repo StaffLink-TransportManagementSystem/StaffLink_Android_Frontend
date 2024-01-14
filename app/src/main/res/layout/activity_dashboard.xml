@@ -15,18 +15,18 @@
         android:layout_marginTop="20dp">
 
         <TextView
+            android:id="@+id/amazonName"
             android:layout_width="0dp"
             android:layout_height="42dp"
-            android:id="@+id/amazonName"
-            android:text="StaffLink"
-            android:textSize="40sp"
-            android:textColor="@color/black"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="32dp"
             android:fontFamily="@font/poppins"
-            app:layout_constraintTop_toTopOf="parent"
+            android:text="StaffLink"
+            android:textColor="#0D3073"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@+id/amazonImage"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/amazonImage"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:layout_width="0dp"
@@ -35,7 +35,7 @@
             android:text="Quality Staff Transport Service for all ..."
             android:textSize="14sp"
             android:layout_marginStart="18dp"
-            android:textColor="@color/black"
+            android:textColor="#0D3073"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/amazonName"
             app:layout_constraintEnd_toStartOf="@+id/amazonImage"/>
@@ -44,7 +44,7 @@
             android:layout_width="0dp"
             android:layout_height="130dp"
             android:id="@+id/amazonImage"
-            android:src="@drawable/dbImage"
+            android:src="@drawable/db_image"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp"
@@ -91,7 +91,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:id="@+id/clothingImage"
-                        android:src="@drawable/addVehicle"
+                        android:src="@drawable/add_vehicle"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
@@ -174,7 +174,7 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:id="@+id/homeImage"
-                        android:src="@drawable/addDriver"
+                        android:src="@drawable/add_driver"
                         android:layout_marginTop="15dp"
                         android:layout_centerHorizontal="true"/>
 
