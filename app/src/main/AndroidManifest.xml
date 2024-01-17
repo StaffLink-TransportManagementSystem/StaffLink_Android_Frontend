@@ -31,7 +31,7 @@
             android:name=".Reservations"
             android:exported="false" />
         <activity
-            android:name=".passengers"
+            android:name=".Passengers"
             android:exported="false" />
         <activity
             android:name=".add_driver_page1"

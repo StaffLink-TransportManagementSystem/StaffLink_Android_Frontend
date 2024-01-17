@@ -1,5 +1,6 @@
 package com.example.stafflinkmobile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -11,7 +12,9 @@ class MainActivity : AppCompatActivity() {
 
         val getStarted: Button = findViewById(R.id.button2)
         getStarted.setOnClickListener {
-            setContentView(R.layout.activity_register  )
+//            setContentView(R.layout.activity_register  )
+            val intent = Intent(this, Register::class.java)
+            startActivity(intent)
         }
     }
 }
