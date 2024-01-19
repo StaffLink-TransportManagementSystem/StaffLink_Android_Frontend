@@ -13,6 +13,9 @@
         android:theme="@style/Theme.StaffLinkMobile"
         tools:targetApi="31">
         <activity
+            android:name=".Choose_User"
+            android:exported="false" />
+        <activity
             android:name=".Passenger_Details"
             android:exported="false" />
         <activity
@@ -31,7 +34,7 @@
             android:name=".Reservations"
             android:exported="false" />
         <activity
-            android:name=".passengers"
+            android:name=".Passengers"
             android:exported="false" />
         <activity
             android:name=".add_driver_page1"

@@ -3,9 +3,9 @@ package com.example.stafflinkmobile
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class passengers : AppCompatActivity() {
+class Choose_User : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_passengers)
+        setContentView(R.layout.activity_choose_user)
     }
 }
