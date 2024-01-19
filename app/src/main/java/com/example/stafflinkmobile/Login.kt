@@ -1,25 +1,33 @@
 package com.example.stafflinkmobile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
 class Login : AppCompatActivity() {
+    lateinit var Login_button: Button
+    lateinit var Register_button: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val button: Button = findViewById(R.id.LoginButton)
-        button.setOnClickListener {
-            setContentView(R.layout.activity_dashboard)
+        Login_button = findViewById(R.id.LoginButton)
+        Login_button.setOnClickListener {
+//            setContentView(R.layout.activity_dashboard)
+            val intent1 = Intent(this, Dashboard::class.java)
+            startActivity(intent1)
         }
 
 
-        val registerButton: TextView = findViewById(R.id.goToRegister)
-        registerButton.setOnClickListener {
-            setContentView(R.layout.activity_register)
+        Register_button= findViewById(R.id.goToRegister)
+        Register_button.setOnClickListener {
+//            setContentView(R.layout.activity_register)
+            val intent2 = Intent(this, Register::class.java)
+            startActivity(intent2)
         }
+
     }
 
 

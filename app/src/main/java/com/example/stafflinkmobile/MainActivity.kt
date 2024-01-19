@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//<<<<<<< HEAD
         topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation);
         bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
 
@@ -36,10 +37,11 @@ class MainActivity : AppCompatActivity() {
 //        getStarted.setOnClickListener {
 //            setContentView(R.layout.activity_register  )
 //        }
-
+//
         Handler(Looper.getMainLooper()).postDelayed({
             var register_Intent = Intent(this,Login :: class.java )
             startActivity(register_Intent)
         }, SPLASH_SCREEN.toLong())
+
     }
 }
