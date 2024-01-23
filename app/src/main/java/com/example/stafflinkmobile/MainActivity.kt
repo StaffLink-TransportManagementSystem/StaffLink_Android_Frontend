@@ -39,8 +39,8 @@ class MainActivity : AppCompatActivity() {
 //        }
 //
         Handler(Looper.getMainLooper()).postDelayed({
-            var register_Intent = Intent(this,Login :: class.java )
-            startActivity(register_Intent)
+            var chooseIntent = Intent(this,Choose_User :: class.java )
+            startActivity(chooseIntent)
         }, SPLASH_SCREEN.toLong())
 
     }

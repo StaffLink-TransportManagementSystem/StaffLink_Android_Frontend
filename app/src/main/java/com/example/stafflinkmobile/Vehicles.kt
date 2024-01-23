@@ -12,7 +12,7 @@ class Vehicles : AppCompatActivity() {
 
         var vehicle_details : CardView = findViewById(R.id.vehicle_details)
         vehicle_details.setOnClickListener {
-            var vehicle_details_Intent = Intent(this, vehicle_details::class.java)
+            var vehicle_details_Intent = Intent(this, Vehicle_Details::class.java)
             startActivity(vehicle_details_Intent)
         }
     }
