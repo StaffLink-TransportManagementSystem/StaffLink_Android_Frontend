@@ -16,5 +16,11 @@ class Choose_User : AppCompatActivity() {
             startActivity(owner_Intent)
         }
 
+        var driver : CardView = findViewById(R.id.driver)
+        driver.setOnClickListener {
+            var driver_Intent = Intent(this, Driver_Login::class.java)
+            startActivity(driver_Intent)
+        }
+
     }
 }
