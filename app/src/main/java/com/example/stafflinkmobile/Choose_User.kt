@@ -22,5 +22,11 @@ class Choose_User : AppCompatActivity() {
             startActivity(driver_Intent)
         }
 
+        var passenger : CardView = findViewById(R.id.passenger)
+        passenger.setOnClickListener {
+            var passenger_Intent = Intent(this, Passenger_Login::class.java)
+            startActivity(passenger_Intent)
+        }
+
     }
 }
