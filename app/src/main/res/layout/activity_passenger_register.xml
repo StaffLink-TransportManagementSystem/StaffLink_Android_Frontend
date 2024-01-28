@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".add_vehicle_page1">
+    tools:context=".Passenger_Register">
+
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:focusableInTouchMode="true"
         android:fontFamily="sans-serif-condensed"
-        android:text="Add New Vehicle"
+        android:text="@string/register"
         android:textColor="#0D3073"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintVertical_bias="0.1" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -28,9 +28,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="36dp"
-        android:hint="Vehicle Number"
+        android:hint="@string/name"
         app:counterEnabled="true"
         app:counterMaxLength="30"
         app:endIconMode="clear_text"
@@ -51,13 +51,15 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="0dp"
         android:hint="@string/email"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
         app:endIconMode="clear_text"
         app:helperText="Required*"
         app:helperTextTextColor="#FF0000"
@@ -66,22 +68,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.069">
+        app:layout_constraintVertical_bias="0.03">
 
-        <AutoCompleteTextView
-            android:id="@+id/type"
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Vehicle Type"
-            android:inputType="none" />
-
-        <!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="Vehicle Type"-->
-<!--            tools:layout_editor_absoluteX="14dp"-->
-<!--            tools:layout_editor_absoluteY="530dp" />-->
-
+            android:hint="Email"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="530dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="0dp"
         android:hint="@string/email"
         app:counterEnabled="true"
         app:counterMaxLength="30"
@@ -104,12 +98,12 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
-        app:layout_constraintVertical_bias="0.069">
+        app:layout_constraintVertical_bias="0.03">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Vehicle Brand"
+            android:hint="Contact Number"
             tools:layout_editor_absoluteX="14dp"
             tools:layout_editor_absoluteY="530dp" />
 
@@ -122,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="0dp"
         android:hint="@string/email"
         app:counterEnabled="true"
         app:counterMaxLength="30"
@@ -133,13 +127,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
-        app:layout_constraintVertical_bias="0.069">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintVertical_bias="0.03">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Vehicle Brand"
+            android:hint="NIC Number"
             tools:layout_editor_absoluteX="14dp"
             tools:layout_editor_absoluteY="530dp" />
 
@@ -152,7 +146,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="0dp"
         android:hint="@string/email"
         app:counterEnabled="true"
         app:counterMaxLength="30"
@@ -164,55 +158,25 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
-        app:layout_constraintVertical_bias="0.069">
+        app:layout_constraintVertical_bias="0.03">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Registration Number"
+            android:hint="Password"
             tools:layout_editor_absoluteX="14dp"
             tools:layout_editor_absoluteY="530dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/textInputLayout6"-->
-<!--        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="36dp"-->
-<!--        android:layout_marginEnd="36dp"-->
-<!--        android:layout_marginTop="1dp"-->
-<!--        android:hint="@string/email"-->
-<!--        app:counterEnabled="true"-->
-<!--        app:counterMaxLength="30"-->
-<!--        app:endIconMode="clear_text"-->
-<!--        app:helperText="Required*"-->
-<!--        app:helperTextTextColor="#FF0000"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"-->
-<!--        app:layout_constraintVertical_bias="0.069">-->
-
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="Driver Email"-->
-<!--            tools:layout_editor_absoluteX="14dp"-->
-<!--            tools:layout_editor_absoluteY="530dp" />-->
-
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout7"
+        android:id="@+id/textInputLayout6"
         style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="0dp"
         android:hint="@string/email"
         app:counterEnabled="true"
         app:counterMaxLength="30"
@@ -224,52 +188,22 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
-        app:layout_constraintVertical_bias="0.069">
+        app:layout_constraintVertical_bias="0.03">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Number of Seats"
+            android:hint="Conform Password"
             tools:layout_editor_absoluteX="14dp"
             tools:layout_editor_absoluteY="530dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/textInputLayout8"-->
-<!--        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="36dp"-->
-<!--        android:layout_marginEnd="36dp"-->
-<!--        android:layout_marginTop="1dp"-->
-<!--        android:hint="@string/email"-->
-<!--        app:counterEnabled="true"-->
-<!--        app:counterMaxLength="30"-->
-<!--        app:endIconMode="clear_text"-->
-<!--        app:helperText="Required*"-->
-<!--        app:helperTextTextColor="#FF0000"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"-->
-<!--        app:layout_constraintVertical_bias="0.069">-->
-
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="Starting Location"-->
-<!--            tools:layout_editor_absoluteX="14dp"-->
-<!--            tools:layout_editor_absoluteY="530dp" />-->
-
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
-
     <Button
-        android:id="@+id/next_button"
+        android:id="@+id/registerButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="Register"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:background="@color/black"
@@ -278,34 +212,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
         app:layout_constraintVertical_bias="0.132" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/textView4"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Already have an Account?"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.416"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/button"-->
-<!--        app:layout_constraintVertical_bias="0.103" />-->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an Account?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton"
+        app:layout_constraintVertical_bias="0.103" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/textView5"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Login"-->
-<!--        android:textColor="#0D3073"-->
-<!--        android:layout_marginStart="5dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/textView4"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/button"-->
-<!--        app:layout_constraintVertical_bias="0.102" />-->
-
+    <TextView
+        android:id="@+id/goToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#0D3073"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton"
+        app:layout_constraintVertical_bias="0.102" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

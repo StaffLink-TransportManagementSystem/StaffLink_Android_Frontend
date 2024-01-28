@@ -2,6 +2,6 @@
     <string name="app_name">StaffLinkMobile</string>
     <string name="name">Name</string>
     <string name="email" />
-    <string name="register">Register</string>
+    <string name="register">Passenger Register</string>
     <string name="register_vehicle">Register Vehicle</string>
 </resources>
