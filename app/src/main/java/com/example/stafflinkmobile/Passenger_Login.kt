@@ -18,7 +18,7 @@ class Passenger_Login : AppCompatActivity() {
         Login_button = findViewById(R.id.LoginButton)
         Login_button.setOnClickListener {
 //            setContentView(R.layout.activity_dashboard)
-            val intent1 = Intent(this, Dashboard::class.java)
+            val intent1 = Intent(this, Passenger_Dashboard::class.java)
             startActivity(intent1)
         }
 
