@@ -10,12 +10,12 @@ class Passenger_Dashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_passenger_dashboard)
 
-//        var find_transport : CardView = findViewById(R.id.findTransport)
-//
-//        find_transport.setOnClickListener {
-//            var find_transport_Intent = Intent(this, Find_Transport::class.java)
-//            startActivity(find_transport_Intent)
-//        }
+        var find_transport : CardView = findViewById(R.id.findTransport)
+
+        find_transport.setOnClickListener {
+            var find_transport_Intent = Intent(this, Find_Transport::class.java)
+            startActivity(find_transport_Intent)
+        }
 //
 //        var requests : CardView = findViewById(R.id.requests)
 //        requests.setOnClickListener {
