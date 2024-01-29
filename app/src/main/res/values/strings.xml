@@ -4,4 +4,13 @@
     <string name="email" />
     <string name="register">Passenger Register</string>
     <string name="register_vehicle">Register Vehicle</string>
+
+
+    <string-array name="drop_place_options">
+        <item>Morning</item>
+        <item>Evening</item>
+        <item>Both</item>
+    </string-array>
+
+
 </resources>
