@@ -28,15 +28,16 @@ class Driver_Dashboard : AppCompatActivity(), NavigationView.OnNavigationItemSel
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, DriverDashboardFragment()).commit()
-            navigationView.setCheckedItem(R.id.nav_dashboard)
-        }
+//        if (savedInstanceState == null) {
+//            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, DriverDashboardFragment()).commit()
+//            navigationView.setCheckedItem(R.id.nav_dashboard)
+//        }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.nav_dashboard -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, DriverDashboardFragment()).commit()
+//          R.id.nav_dashboard -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, DriverDashboardFragment()).commit()
+
         }
 
         drawerLayout.closeDrawer(GravityCompat.START)
