@@ -16,12 +16,12 @@ class Passenger_Dashboard : AppCompatActivity() {
             var find_transport_Intent = Intent(this, Find_Transport::class.java)
             startActivity(find_transport_Intent)
         }
-//
-//        var requests : CardView = findViewById(R.id.requests)
-//        requests.setOnClickListener {
-//            var requests_Intent = Intent(this, Passenger_Requests::class.java)
-//            startActivity(requests_Intent)
-//        }
+
+        var requests : CardView = findViewById(R.id.requests)
+        requests.setOnClickListener {
+            var requests_Intent = Intent(this, Passenger_Requests::class.java)
+            startActivity(requests_Intent)
+        }
 //
 //        var reservations : CardView = findViewById(R.id.my_reservations)
 //        reservations.setOnClickListener {
