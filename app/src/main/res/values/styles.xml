@@ -9,4 +9,8 @@
         <item name="android:textSize">10sp</item> <!-- Adjust the text size as needed -->
     </style>
 
+    <style name="BlueDatePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorControlActivated">#0D3073</item> <!-- Change @color/blue to your desired blue color -->
+    </style>
+
 </resources>
