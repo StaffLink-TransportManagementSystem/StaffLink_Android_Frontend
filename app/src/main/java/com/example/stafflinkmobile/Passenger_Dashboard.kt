@@ -22,13 +22,13 @@ class Passenger_Dashboard : AppCompatActivity() {
             var requests_Intent = Intent(this, Passenger_Requests::class.java)
             startActivity(requests_Intent)
         }
-//
-//        var reservations : CardView = findViewById(R.id.my_reservations)
-//        reservations.setOnClickListener {
-//            var reservations_Intent = Intent(this, Passenger_Reservations::class.java)
-//            startActivity(reservations_Intent)
-//        }
-//
+
+        var reservations : CardView = findViewById(R.id.my_reservations)
+        reservations.setOnClickListener {
+            var reservations_Intent = Intent(this, Passenger_Reservations::class.java)
+            startActivity(reservations_Intent)
+        }
+
 //        var absents : CardView = findViewById(R.id.absents)
 //        absents.setOnClickListener {
 //            var absents_Intent = Intent(this, Passenger_Absents::class.java)
