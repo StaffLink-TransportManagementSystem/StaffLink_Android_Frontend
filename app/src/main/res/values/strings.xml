@@ -12,5 +12,13 @@
         <item>Both</item>
     </string-array>
 
+    <string-array name="select_reservation">
+        <item>Reservation 01</item>
+        <item>Reservation 02</item>
+        <item>Reservation 03</item>
+    </string-array>
 
+
+    <string name="open_nav">Open Navigation View</string>
+    <string name="close_nav">Close Navigation View</string>
 </resources>
