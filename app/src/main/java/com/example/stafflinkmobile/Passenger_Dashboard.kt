@@ -34,12 +34,12 @@ class Passenger_Dashboard : AppCompatActivity() {
             var absents_Intent = Intent(this, Passenger_Absants::class.java)
             startActivity(absents_Intent)
         }
-//
-//        var finances : CardView = findViewById(R.id.finance)
-//        finances.setOnClickListener {
-//            var finances_Intent = Intent(this, Passenger_Finance::class.java)
-//            startActivity(finances_Intent)
-//        }
+
+        var finances : CardView = findViewById(R.id.payments)
+        finances.setOnClickListener {
+            var finances_Intent = Intent(this, Passenger_Financials::class.java)
+            startActivity(finances_Intent)
+        }
 
     }
 
